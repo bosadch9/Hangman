@@ -2,6 +2,7 @@
 //  ViewController.swift
 //  Hangman
 //burger
+//Emma was here
 //  Created by Bohdan Osadchyy 2019 on 5/7/19.
 //  Copyright © 2019 Bohdan Osadchyy 2019. All rights reserved.
 //
