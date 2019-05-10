@@ -13,6 +13,7 @@
 		8DFD580E2281D10A00C98564 /* Hangman.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DFD580C2281D10A00C98564 /* Hangman.xcdatamodeld */; };
 		8DFD58102281D10C00C98564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DFD580F2281D10C00C98564 /* Assets.xcassets */; };
 		8DFD58132281D10C00C98564 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DFD58112281D10C00C98564 /* LaunchScreen.storyboard */; };
+		BEF6CEF22285C219009C214B /* english3.txt in Resources */ = {isa = PBXBuildFile; fileRef = BEF6CEF12285C219009C214B /* english3.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8DFD580F2281D10C00C98564 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DFD58122281D10C00C98564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DFD58142281D10C00C98564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEF6CEF12285C219009C214B /* english3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = english3.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				8DFD58092281D10A00C98564 /* Main.storyboard */,
 				8DFD580F2281D10C00C98564 /* Assets.xcassets */,
 				8DFD58112281D10C00C98564 /* LaunchScreen.storyboard */,
+				BEF6CEF12285C219009C214B /* english3.txt */,
 				8DFD58142281D10C00C98564 /* Info.plist */,
 				8DFD580C2281D10A00C98564 /* Hangman.xcdatamodeld */,
 			);
@@ -128,6 +131,7 @@
 				8DFD58132281D10C00C98564 /* LaunchScreen.storyboard in Resources */,
 				8DFD58102281D10C00C98564 /* Assets.xcassets in Resources */,
 				8DFD580B2281D10A00C98564 /* Main.storyboard in Resources */,
+				BEF6CEF22285C219009C214B /* english3.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
