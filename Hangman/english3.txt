@@ -1809,7 +1809,6 @@ aimless
 aimlessly
 aimlessness
 aims
-ain't
 aine
 ainee
 aintree
@@ -6766,7 +6765,6 @@ arefaction
 arefy
 areg
 aren
-aren't
 arena
 arenaceous
 arenaria
@@ -7828,7 +7826,6 @@ asps
 asquat
 asquint
 asquith
-ass
 assafetida
 assafoetida
 assagai
@@ -15957,10 +15954,6 @@ bollix
 bollock
 bollocked
 bollocking
-bollocks
-bollocksed
-bollockses
-bollocksing
 bolls
 bollywood
 bolo
@@ -20607,7 +20600,6 @@ camstone
 camstones
 camus
 can
-can't
 canaan
 canaanite
 canaanites
@@ -33843,7 +33835,6 @@ coughing
 coughings
 coughs
 could
-couldn't
 coulee
 coulees
 coulibiaca
@@ -40107,7 +40098,6 @@ demolishing
 demolishment
 demolishments
 demolition
-demolition's
 demolitionist
 demolitionists
 demolitions
@@ -40292,7 +40282,6 @@ denationalised
 denationalises
 denationalising
 denationalization
-denationalization's
 denationalize
 denationalized
 denationalizes
@@ -42751,7 +42740,6 @@ didicoi
 didicois
 didicoy
 didicoys
-didn't
 dido
 didoes
 didos
@@ -46223,7 +46211,6 @@ doer
 doers
 does
 doeskin
-doesn't
 doest
 doeth
 doff
@@ -46549,7 +46536,6 @@ domo
 domos
 domy
 don
-don't
 dona
 donah
 donahs
@@ -52658,8 +52644,6 @@ entozoa
 entozoal
 entozoic
 entozoon
-entr'acte
-entr'actes
 entrail
 entrails
 entrain
@@ -57075,31 +57059,6 @@ faffed
 faffing
 faffs
 fafnir
-fag
-fagaceae
-fagaceous
-fagged
-faggeries
-faggery
-fagging
-faggings
-faggot
-faggoted
-faggoting
-faggotings
-faggots
-fagin
-fagins
-fagot
-fagoted
-fagoting
-fagots
-fagotti
-fagottist
-fagottists
-fagotto
-fags
-fagus
 fah
 fahlband
 fahlbands
@@ -63871,7 +63830,6 @@ fuzzily
 fuzziness
 fuzzing
 fuzzy
-fy
 fyke
 fykes
 fylde
@@ -63881,10 +63839,8 @@ fylingdale
 fynbos
 fyrd
 fyrds
-fys
 fytte
 fyttes
-g
 gab
 gabardine
 gabardines
@@ -70413,8 +70369,6 @@ gyve
 gyved
 gyves
 gyving
-h
-ha
 haaf
 haafs
 haar
@@ -70558,7 +70512,6 @@ hadji
 hadjis
 hadlee
 hadley
-hadn't
 hadrian
 hadrome
 hadron
@@ -71758,7 +71711,6 @@ hask
 haslemere
 haslet
 haslets
-hasn't
 hasp
 hasped
 hasping
@@ -71956,7 +71908,6 @@ havel
 havelock
 havelocks
 haven
-haven't
 havened
 havening
 havens
@@ -72117,9 +72068,6 @@ hazlitt
 hazri
 hazy
 he
-he'd
-he'll
-he's
 head
 headache
 headaches
@@ -74600,7 +74548,6 @@ hoffman
 hoffmann
 hoffnung
 hofmann
-hofmannsthal
 hog
 hogan
 hogans
@@ -77471,11 +77418,6 @@ hysterotomy
 hythe
 hythes
 hywel
-i
-i'd
-i'll
-i'm
-i've
 iachimo
 iago
 iai
@@ -84595,7 +84537,6 @@ ismatical
 ismaticalness
 isms
 ismy
-isn't
 iso
 isoagglutination
 isoagglutinin
@@ -84861,9 +84802,6 @@ isthmuses
 istiophorus
 istle
 it
-it'd
-it'll
-it's
 ita
 itacism
 itacolumite
@@ -84992,7 +84930,6 @@ izvestia
 izvestiya
 izzard
 izzards
-j
 jab
 jabbed
 jabber
@@ -88813,7 +88750,6 @@ kwanza
 kwashiorkor
 kwela
 kwon
-ky
 kyang
 kyangs
 kyanise
@@ -88865,8 +88801,6 @@ kything
 kyu
 kyus
 kyushu
-l
-la
 laager
 laagered
 laagering
@@ -94600,9 +94534,6 @@ lytta
 lyttas
 lyttleton
 lytton
-m
-ma
-maa
 maaed
 maaing
 maar
@@ -97583,7 +97514,6 @@ mayhap
 mayhem
 maying
 mayings
-mayn't
 mayo
 mayologist
 mayologists
@@ -104072,7 +104002,6 @@ mozzettas
 mozzie
 mozzies
 mozzle
-mp
 mpret
 mprets
 mps
@@ -105014,7 +104943,6 @@ mustier
 mustiest
 mustily
 mustiness
-mustn't
 musts
 musty
 mutability
@@ -105461,8 +105389,6 @@ mzee
 mzees
 mzungu
 mzungus
-n
-na
 naafi
 naam
 naams
@@ -107470,30 +107396,6 @@ niger
 nigeria
 nigerian
 nigerians
-niggard
-niggardise
-niggardised
-niggardises
-niggardising
-niggardize
-niggardized
-niggardizes
-niggardizing
-niggardliness
-niggardly
-niggardlyness
-niggards
-nigger
-niggerdom
-niggered
-niggering
-niggerish
-niggerism
-niggerisms
-niggerling
-niggerlings
-niggers
-niggery
 niggle
 niggled
 niggler
@@ -109290,8 +109192,6 @@ nystagmic
 nystagmus
 nystatin
 nyx
-o
-o'clock
 oaf
 oafish
 oafs
@@ -112474,7 +112374,6 @@ oudenaarde
 oudenarde
 oudenardes
 ought
-oughtn't
 oughtness
 oughts
 ouija
@@ -114790,8 +114689,6 @@ ozonizing
 ozonosphere
 ozzie
 ozzies
-p
-pa
 pablo
 pabst
 pabular
@@ -130914,7 +130811,6 @@ pusillanimously
 pusillanimousness
 puss
 pusses
-pussies
 pussycat
 pussyfoot
 pussyfooted
@@ -132397,8 +132293,6 @@ quoting
 quotum
 quotums
 qwerty
-r
-ra
 rabanna
 rabat
 rabatine
@@ -142415,8 +142309,6 @@ rype
 rypeck
 rypecks
 ryper
-s
-sa
 saam
 saame
 saanen
@@ -148551,23 +148443,6 @@ shafting
 shaftings
 shaftless
 shafts
-shag
-shagged
-shaggedness
-shaggier
-shaggiest
-shaggily
-shagginess
-shagging
-shaggy
-shaggymane
-shagpile
-shagreen
-shagreened
-shagreens
-shagroon
-shagroons
-shags
 shah
 shahs
 shaikh
@@ -148705,7 +148580,6 @@ shams
 shamus
 shamuses
 shan
-shan't
 shanachie
 shanachies
 shandean
@@ -148893,8 +148767,6 @@ shays
 shchi
 shchis
 she
-she'd
-she'll
 shea
 sheading
 sheadings
@@ -149721,7 +149593,6 @@ shouldering
 shoulderings
 shoulders
 shouldest
-shouldn't
 shouldst
 shout
 shouted
@@ -158514,7 +158385,6 @@ sterilises
 sterilising
 sterility
 sterilization
-sterilization's
 sterilizations
 sterilize
 sterilized
@@ -164735,7 +164605,6 @@ syzygy
 szechwan
 szell
 szymanowski
-t
 ta
 taal
 tab
@@ -168143,7 +168012,6 @@ thannas
 thar
 thars
 that
-that's
 thataway
 thatch
 thatched
@@ -168474,7 +168342,6 @@ theravada
 therblig
 therbligs
 there
-there's
 thereabout
 thereabouts
 thereafter
@@ -168686,10 +168553,6 @@ thewless
 thews
 thewy
 they
-they'd
-they'll
-they're
-they've
 thiamin
 thiamine
 thiasus
@@ -174862,15 +174725,6 @@ twanks
 twas
 twasome
 twasomes
-twat
-twats
-twattle
-twattled
-twattler
-twattlers
-twattles
-twattling
-twattlings
 tway
 tways
 tweak
@@ -175323,9 +175177,6 @@ tzatzikis
 tzigane
 tziganes
 tzimmes
-tzu
-tzus
-u
 ubermensch
 ubermenschen
 uberous
@@ -183470,8 +183321,6 @@ uzbekistan
 uzbeks
 uzi
 uzis
-v
-va
 vaal
 vaasa
 vac
@@ -186797,7 +186646,6 @@ vrouw
 vrouws
 vrow
 vrows
-vu
 vug
 vuggy
 vugs
@@ -186898,8 +186746,6 @@ vulvo
 vum
 vying
 vyingly
-w
-wa
 waac
 waaf
 waafs
@@ -187689,7 +187535,6 @@ washtub
 washy
 wasm
 wasms
-wasn't
 wasp
 waspier
 waspiest
@@ -188005,10 +187850,6 @@ wazir
 wazirs
 wc
 we
-we'd
-we'll
-we're
-we've
 wea
 weak
 weaken
@@ -188440,7 +188281,6 @@ wept
 were
 weregild
 weregilds
-weren't
 werewolf
 werewolfish
 werewolfism
@@ -190131,7 +189971,6 @@ womenkind
 womera
 womeras
 won
-won't
 wonder
 wonderbra
 wonderbras
@@ -190570,7 +190409,6 @@ wou
 woubit
 woubits
 would
-wouldn't
 wouldst
 woulfe
 wound
@@ -190867,7 +190705,6 @@ wyclifite
 wycombe
 wye
 wyes
-wyf
 wykeham
 wykehamist
 wylie
@@ -190888,7 +190725,6 @@ wytes
 wyting
 wyvern
 wyverns
-x
 xanadu
 xantham
 xanthan
@@ -191009,11 +190845,8 @@ xerxes
 xhosa
 xhosan
 xhosas
-xi
 xian
 xians
-xii
-xiii
 ximenean
 ximenes
 ximenez
@@ -191036,8 +190869,6 @@ xiphophyllous
 xiphosura
 xiphosuran
 xiphosurans
-xiv
-xix
 xmas
 xmases
 xoana
@@ -191046,21 +190877,6 @@ xosa
 xray
 xrays
 xu
-xv
-xvi
-xvii
-xviii
-xx
-xxi
-xxii
-xxiii
-xxiv
-xxix
-xxv
-xxvi
-xxvii
-xxviii
-xxx
 xylem
 xylene
 xylenes
@@ -191126,8 +190942,6 @@ xystoi
 xystos
 xysts
 xystus
-y
-ya
 yabber
 yabbered
 yabbering
@@ -191710,10 +191524,6 @@ yorubas
 yos
 yosemite
 you
-you'd
-you'll
-you're
-you've
 youk
 youked
 youking
@@ -191854,9 +191664,6 @@ yus
 yvelines
 yvette
 yvonne
-ywca
-ywis
-z
 zabaglione
 zabagliones
 zabaione
