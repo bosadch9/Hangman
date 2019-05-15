@@ -9,21 +9,36 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate
 {
+    @IBOutlet weak var hangmanImageView: UIImageView!
     @IBOutlet weak var viewHolder: UIView!
     var currentWord: String = ""
     var letters: [String] = Array()
     var labels: [UILabel] = Array()
+    var incorrectGuesses: [String] = Array()
+    var temporaryArray: [String] = Array()
     var guessedLetter: String = ""
     @IBOutlet weak var guessButton: UIButton!
     @IBOutlet weak var currentGuessTextfield: UITextField!
+    @IBOutlet weak var incorrectGuessLabel: UILabel!
+    var i = 0
+    let imageArray = ["hangman0", "hangman1", "hangman2", "hangman3", "hangman4", "hangman5", "hangman6"]
+
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         currentGuessTextfield.smartInsertDeleteType = UITextSmartInsertDeleteType.no
         currentGuessTextfield.delegate = self
+        hangmanImageView.image = UIImage(named: imageArray[0])
+
+    }
+    
+    @IBAction func startGameButtonPressed(_ sender: UIBarButtonItem)
+    {
         startGame()
     }
+    
+    
 
     //This starts the game. A random word is selected and blank spaces are displayed on the screen
     func startGame()
@@ -31,6 +46,8 @@ class ViewController: UIViewController, UITextFieldDelegate
         letters.removeAll()
         labels.removeAll()
         getWord()
+        print(letters)
+        print(labels)
         for letter in currentWord
         {
             letters.append("\(letter)")
@@ -45,6 +62,7 @@ class ViewController: UIViewController, UITextFieldDelegate
         stackView1.spacing = 15
         stackView1.translatesAutoresizingMaskIntoConstraints = false
         viewHolder.addSubview(stackView1)
+        temporaryArray = letters
     }
     
     //This generates a random word
@@ -77,16 +95,36 @@ class ViewController: UIViewController, UITextFieldDelegate
         return count <= 1
     }
     
+    //This code is executed when the user clicks the guess button
     @IBAction func guessButtonPressed(_ sender: UIButton)
     {
         guessedLetter = currentGuessTextfield.text!
         var index = 0
+        currentGuessTextfield.text=""
         
         for letter in letters
         {
+            //This code is executed if the letter the user guesses is in the word
             if letter==guessedLetter
             {
                 labels[index].text = letter
+                for char in temporaryArray
+                {
+                    if char == guessedLetter
+                    {
+                        temporaryArray.removeAll(keepingCapacity: guessedLetter==char)
+                    }
+                }
+                print(temporaryArray)
+            }
+            //This code is executed if the letter the user guesses is not in the word
+            else
+            {
+                incorrectGuesses.append(guessedLetter)
+                incorrectGuessLabel.text = "\(incorrectGuesses)"
+                i += 1
+                hangmanImageView.image = UIImage(named: imageArray[i])
+
             }
             index+=1
         }

@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Hangman-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
@@ -42,7 +42,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="OFy-Ah-yAV"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incorrect Guesses:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPv-Vg-hyZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Incorrect Guesses:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPv-Vg-hyZ">
                                 <rect key="frame" x="15" y="272" width="144" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -63,30 +63,50 @@
                                     <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GyF-y1-Q1p"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eht-Vv-mIp">
+                                <rect key="frame" x="174" y="272" width="185" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="grE-3c-uGY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="kax-I7-SDL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="16d-JN-fFl"/>
+                            <constraint firstItem="Eht-Vv-mIp" firstAttribute="leading" secondItem="vPv-Vg-hyZ" secondAttribute="trailing" constant="15" id="5lw-L0-wvu"/>
                             <constraint firstItem="9rx-vQ-p2X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FW0-TI-wYS"/>
                             <constraint firstItem="kax-I7-SDL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Nct-dJ-bdG"/>
+                            <constraint firstItem="Eht-Vv-mIp" firstAttribute="top" secondItem="9rx-vQ-p2X" secondAttribute="bottom" constant="8" id="Shh-d3-JKt"/>
                             <constraint firstItem="vPv-Vg-hyZ" firstAttribute="top" secondItem="9rx-vQ-p2X" secondAttribute="bottom" constant="8" id="VPn-Px-0rj"/>
                             <constraint firstItem="9rx-vQ-p2X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Y6A-FA-Ma3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Eht-Vv-mIp" secondAttribute="trailing" constant="10" id="oa1-i1-SFz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9rx-vQ-p2X" secondAttribute="trailing" id="pw5-1J-e4h"/>
                             <constraint firstItem="vPv-Vg-hyZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="qdk-ZU-te3"/>
                             <constraint firstItem="kax-I7-SDL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="r16-pl-n2p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mjy-TX-DR4"/>
+                    <navigationItem key="navigationItem" title="Hangman" id="mjy-TX-DR4">
+                        <barButtonItem key="rightBarButtonItem" title="Start Game" id="SIT-P2-Id2">
+                            <connections>
+                                <action selector="startGameButtonPressed:" destination="BYZ-38-t0r" id="95N-hX-k23"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="currentGuessTextfield" destination="Yt2-dh-Tbw" id="rcm-gh-SPZ"/>
                         <outlet property="guessButton" destination="dDF-Ef-Jjn" id="etw-zl-KcE"/>
+                        <outlet property="hangmanImageView" destination="9rx-vQ-p2X" id="10E-Iy-Ih1"/>
+                        <outlet property="incorrectGuessLabel" destination="Eht-Vv-mIp" id="Q6C-Hx-zbP"/>
                         <outlet property="viewHolder" destination="kax-I7-SDL" id="BYy-7X-Yxg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="943" y="-672"/>
+            <point key="canvasLocation" x="941.60000000000002" y="-672.41379310344837"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vdc-NR-lbt">
