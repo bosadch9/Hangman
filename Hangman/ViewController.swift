@@ -7,18 +7,22 @@
 
 import UIKit
 
-class ViewController: UIViewController
+class ViewController: UIViewController, UITextFieldDelegate
 {
     @IBOutlet weak var viewHolder: UIView!
     var currentWord: String = ""
     var letters: [String] = Array()
     var labels: [UILabel] = Array()
+    var guessedLetter: String = ""
     @IBOutlet weak var guessButton: UIButton!
     @IBOutlet weak var currentGuessTextfield: UITextField!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        currentGuessTextfield.smartInsertDeleteType = UITextSmartInsertDeleteType.no
+        currentGuessTextfield.delegate = self
+        startGame()
     }
 
     //This starts the game. A random word is selected and blank spaces are displayed on the screen
@@ -61,23 +65,30 @@ class ViewController: UIViewController
         }
     }
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let currentText = textField.text ?? ""
-        guard let stringRange = Range(range, in: currentText) else { return false }
-        
-        let updatedText = currentText.replacingCharacters(in: stringRange, with: string)
-        
-        return updatedText.count <= 1
+    //This limits the textfield to only allow 1 character to be entered
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
+    {
+        guard let textFieldText = currentGuessTextfield.text,
+            let rangeOfTextToReplace = Range(range, in: textFieldText) else {
+                return false
+        }
+        let substringToReplace = textFieldText[rangeOfTextToReplace]
+        let count = textFieldText.count - substringToReplace.count + string.count
+        return count <= 1
     }
     
     @IBAction func guessButtonPressed(_ sender: UIButton)
     {
+        guessedLetter = currentGuessTextfield.text!
+        var index = 0
         
-        
-        //if let guessedChar = Character(currentGuessTextfield.text!)
         for letter in letters
         {
-                
+            if letter==guessedLetter
+            {
+                labels[index].text = letter
+            }
+            index+=1
         }
         
     }

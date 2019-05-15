@@ -42,9 +42,8 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="OFy-Ah-yAV"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Incorrect Guesses:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPv-Vg-hyZ">
-                                <rect key="frame" x="15" y="272" width="160" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incorrect Guesses:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPv-Vg-hyZ">
+                                <rect key="frame" x="15" y="272" width="144" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -70,8 +69,10 @@
                             <constraint firstItem="kax-I7-SDL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="16d-JN-fFl"/>
                             <constraint firstItem="9rx-vQ-p2X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FW0-TI-wYS"/>
                             <constraint firstItem="kax-I7-SDL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Nct-dJ-bdG"/>
+                            <constraint firstItem="vPv-Vg-hyZ" firstAttribute="top" secondItem="9rx-vQ-p2X" secondAttribute="bottom" constant="8" id="VPn-Px-0rj"/>
                             <constraint firstItem="9rx-vQ-p2X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Y6A-FA-Ma3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9rx-vQ-p2X" secondAttribute="trailing" id="pw5-1J-e4h"/>
+                            <constraint firstItem="vPv-Vg-hyZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="qdk-ZU-te3"/>
                             <constraint firstItem="kax-I7-SDL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="r16-pl-n2p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -85,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="972" y="-671.51424287856082"/>
+            <point key="canvasLocation" x="943" y="-672"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vdc-NR-lbt">
@@ -103,7 +104,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hOj-qV-o7t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="125.59999999999999" y="-670.61469265367316"/>
+            <point key="canvasLocation" x="-17" y="-672"/>
         </scene>
     </scenes>
 </document>
