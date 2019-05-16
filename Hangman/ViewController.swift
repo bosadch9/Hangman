@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate
 {
+    //These are the variables and constants used in the code
     @IBOutlet weak var hangmanImageView: UIImageView!
     @IBOutlet weak var viewHolder: UIView!
     var currentWord: String = ""
@@ -33,6 +34,7 @@ class ViewController: UIViewController, UITextFieldDelegate
         hangmanImageView.image = UIImage(named: imageArray[0])
     }
     
+    //This is executed when the start button is pressed
     @IBAction func startGameButtonPressed(_ sender: UIBarButtonItem)
     {
         startGame()
@@ -104,8 +106,6 @@ class ViewController: UIViewController, UITextFieldDelegate
         guessedLetter = ""
         i = 0
         incorrectGuessLabel.text = ""
-        //stackView1.removeArrangedSubview(labels)
-        //viewHolder.willRemoveSubview(stackView1)
         stackView1.removeFromSuperview()
         if (win)
         {
