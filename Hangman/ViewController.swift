@@ -119,7 +119,7 @@ class ViewController: UIViewController, UITextFieldDelegate
             incorrectGuesses.append(guessedLetter)
             incorrectGuessLabel.text = "\(incorrectGuesses)"
             i += 1
-            //hangmanImageView.image = UIImage(named: imageArray[i])
+            hangmanImageView.image = UIImage(named: imageArray[i])
             if (i<6)
             {
                 gameOver = false
