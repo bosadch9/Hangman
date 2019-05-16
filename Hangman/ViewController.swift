@@ -22,7 +22,8 @@ class ViewController: UIViewController, UITextFieldDelegate
     @IBOutlet weak var incorrectGuessLabel: UILabel!
     var i = 0
     let imageArray = ["hangman0", "hangman1", "hangman2", "hangman3", "hangman4", "hangman5", "hangman6"]
-
+    var stackView1 = UIStackView()
+    var win: Bool = true
     
     override func viewDidLoad()
     {
@@ -37,16 +38,14 @@ class ViewController: UIViewController, UITextFieldDelegate
         startGame()
     }
     
-    
 
     //This starts the game. A random word is selected and blank spaces are displayed on the screen
     func startGame()
     {
+        hangmanImageView.image = UIImage(named: imageArray[0])
         letters.removeAll()
         labels.removeAll()
         getWord()
-        print(letters)
-        print(labels)
         for letter in currentWord
         {
             letters.append("\(letter)")
@@ -54,7 +53,8 @@ class ViewController: UIViewController, UITextFieldDelegate
             label.text = "_"
             labels.append(label)
         }
-        let stackView1 = UIStackView(arrangedSubviews: labels)
+        //let stackView1 = UIStackView(arrangedSubviews: labels)
+        stackView1 = UIStackView(arrangedSubviews: labels) //
         stackView1.axis = .horizontal
         stackView1.distribution = .fillEqually
         stackView1.alignment = .fill
@@ -94,6 +94,27 @@ class ViewController: UIViewController, UITextFieldDelegate
         return count <= 1
     }
     
+    func gameEnded()
+    {
+        currentWord = ""
+        letters = Array()
+        labels = Array()
+        incorrectGuesses = Array()
+        gameOver = true
+        guessedLetter = ""
+        i = 0
+        incorrectGuessLabel.text = ""
+        //stackView1.removeArrangedSubview(labels)
+        if (win)
+        {
+            hangmanImageView.image = UIImage(named: "win")
+        }
+        else
+        {
+            hangmanImageView.image = UIImage(named: "lose")
+        }
+    }
+    
     //This code is executed when the user clicks the guess button
     @IBAction func guessButtonPressed(_ sender: UIButton)
     {
@@ -119,10 +140,14 @@ class ViewController: UIViewController, UITextFieldDelegate
             incorrectGuesses.append(guessedLetter)
             incorrectGuessLabel.text = "\(incorrectGuesses)"
             i += 1
-            hangmanImageView.image = UIImage(named: imageArray[i])
-            if (i<6)
+            if (i<=6)
             {
                 gameOver = false
+                hangmanImageView.image = UIImage(named: imageArray[i])
+            }
+            else
+            {
+                win = false
             }
         }
         if (found)
@@ -137,7 +162,7 @@ class ViewController: UIViewController, UITextFieldDelegate
         }
         if (gameOver)
         {
-            print("Game Over")
+            gameEnded()
         }
         
     }
