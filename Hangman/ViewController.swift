@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITextFieldDelegate
     var letters: [String] = Array()
     var labels: [UILabel] = Array()
     var incorrectGuesses: [String] = Array()
-    var temporaryArray: [String] = Array()
+    var gameOver: Bool = true
     var guessedLetter: String = ""
     @IBOutlet weak var guessButton: UIButton!
     @IBOutlet weak var currentGuessTextfield: UITextField!
@@ -30,7 +30,6 @@ class ViewController: UIViewController, UITextFieldDelegate
         currentGuessTextfield.smartInsertDeleteType = UITextSmartInsertDeleteType.no
         currentGuessTextfield.delegate = self
         hangmanImageView.image = UIImage(named: imageArray[0])
-
     }
     
     @IBAction func startGameButtonPressed(_ sender: UIBarButtonItem)
@@ -62,7 +61,7 @@ class ViewController: UIViewController, UITextFieldDelegate
         stackView1.spacing = 15
         stackView1.translatesAutoresizingMaskIntoConstraints = false
         viewHolder.addSubview(stackView1)
-        temporaryArray = letters
+        gameOver = true
     }
     
     //This generates a random word
@@ -101,6 +100,8 @@ class ViewController: UIViewController, UITextFieldDelegate
         guessedLetter = currentGuessTextfield.text!
         var index = 0
         currentGuessTextfield.text=""
+        gameOver = true
+        var found = false
         
         for letter in letters
         {
@@ -108,25 +109,35 @@ class ViewController: UIViewController, UITextFieldDelegate
             if letter==guessedLetter
             {
                 labels[index].text = letter
-                for char in temporaryArray
-                {
-                    if char == guessedLetter
-                    {
-                        temporaryArray.removeAll(keepingCapacity: guessedLetter==char)
-                    }
-                }
-                print(temporaryArray)
-            }
-            //This code is executed if the letter the user guesses is not in the word
-            else
-            {
-                incorrectGuesses.append(guessedLetter)
-                incorrectGuessLabel.text = "\(incorrectGuesses)"
-                i += 1
-                hangmanImageView.image = UIImage(named: imageArray[i])
-
+                found = true
             }
             index+=1
+        }
+        //This code is executed if the letter the user guesses is not in the word
+        if (!found)
+        {
+            incorrectGuesses.append(guessedLetter)
+            incorrectGuessLabel.text = "\(incorrectGuesses)"
+            i += 1
+            //hangmanImageView.image = UIImage(named: imageArray[i])
+            if (i<6)
+            {
+                gameOver = false
+            }
+        }
+        if (found)
+        {
+            for label in labels
+            {
+                if label.text == "_"
+                {
+                    gameOver = false
+                }
+            }
+        }
+        if (gameOver)
+        {
+            print("Game Over")
         }
         
     }
