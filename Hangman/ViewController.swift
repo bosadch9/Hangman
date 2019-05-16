@@ -53,8 +53,7 @@ class ViewController: UIViewController, UITextFieldDelegate
             label.text = "_"
             labels.append(label)
         }
-        //let stackView1 = UIStackView(arrangedSubviews: labels)
-        stackView1 = UIStackView(arrangedSubviews: labels) //
+        stackView1 = UIStackView(arrangedSubviews: labels)
         stackView1.axis = .horizontal
         stackView1.distribution = .fillEqually
         stackView1.alignment = .fill
@@ -94,6 +93,7 @@ class ViewController: UIViewController, UITextFieldDelegate
         return count <= 1
     }
     
+    //This code is executed when the game ends
     func gameEnded()
     {
         currentWord = ""
@@ -105,6 +105,8 @@ class ViewController: UIViewController, UITextFieldDelegate
         i = 0
         incorrectGuessLabel.text = ""
         //stackView1.removeArrangedSubview(labels)
+        //viewHolder.willRemoveSubview(stackView1)
+        stackView1.removeFromSuperview()
         if (win)
         {
             hangmanImageView.image = UIImage(named: "win")
@@ -113,6 +115,7 @@ class ViewController: UIViewController, UITextFieldDelegate
         {
             hangmanImageView.image = UIImage(named: "lose")
         }
+        win = true
     }
     
     //This code is executed when the user clicks the guess button
