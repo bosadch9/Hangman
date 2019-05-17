@@ -90,7 +90,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Hangman" id="mjy-TX-DR4">
-                        <barButtonItem key="rightBarButtonItem" title="Start Game" id="SIT-P2-Id2">
+                        <barButtonItem key="leftBarButtonItem" title="How to Play" id="tns-cQ-HrH">
+                            <connections>
+                                <segue destination="f2n-HJ-Ehl" kind="show" id="17X-im-ec3"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Play" id="SIT-P2-Id2">
                             <connections>
                                 <action selector="startGameButtonPressed:" destination="BYZ-38-t0r" id="95N-hX-k23"/>
                             </connections>
@@ -125,6 +130,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hOj-qV-o7t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-17" y="-672"/>
+        </scene>
+        <!--How to Play-->
+        <scene sceneID="R0R-s9-2mN">
+            <objects>
+                <viewController title="How to Play" id="f2n-HJ-Ehl" customClass="introViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rjS-wV-pnE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yu8-Ki-v3P">
+                                <rect key="frame" x="127" y="456" width="120" height="30"/>
+                                <state key="normal" title="I'm Still Confused"/>
+                                <connections>
+                                    <action selector="confusedButtonTapped:" destination="f2n-HJ-Ehl" eventType="touchUpInside" id="Vjd-c5-4mS"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mUj-dq-tLQ">
+                                <rect key="frame" x="48" y="222" width="278" height="222"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">The goal of this game is to guess the correct word. When you click Play, a random word will be chosen and you can begin to play. Click on the box that says "current guess" and enter a letter. Then click on the button that says guess. Continue this until you either win or lose.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Yu8-Ki-v3P" firstAttribute="leading" secondItem="4yZ-ig-6pe" secondAttribute="leading" constant="127" id="Rt5-gb-w8E"/>
+                            <constraint firstItem="4yZ-ig-6pe" firstAttribute="trailing" secondItem="Yu8-Ki-v3P" secondAttribute="trailing" constant="128" id="bsP-77-Tri"/>
+                            <constraint firstItem="4yZ-ig-6pe" firstAttribute="bottom" secondItem="Yu8-Ki-v3P" secondAttribute="bottom" constant="181" id="zQF-rF-NpJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4yZ-ig-6pe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0CY-wF-PNZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="421.60000000000002" y="-1361.4692653673164"/>
         </scene>
     </scenes>
 </document>
